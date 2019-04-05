@@ -40,3 +40,459 @@ Processing by PostsController#show as HTML
   [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
   Rendered posts/show.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 27ms (Views: 10.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title Goes Here"], ["description", "Desc goes here..."], ["created_at", "2019-04-05 18:30:02.910682"], ["updated_at", "2019-04-05 18:30:02.910682"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/posts" for ::1 at 2019-04-05 14:39:04 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.7) lib/rack/handler/webrick.rb:86:in `service'
+/Users/caridadrivera/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/caridadrivera/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/caridadrivera/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (18.2ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.6ms)
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (141.6ms)
+Started GET "/posts" for ::1 at 2019-04-05 14:40:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.7) lib/rack/handler/webrick.rb:86:in `service'
+/Users/caridadrivera/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/caridadrivera/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/caridadrivera/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered collection of /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (6.9ms)
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (141.6ms)
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "To be a post"], ["description", "All about being a post, what it entails and what it does hahaha! ok"], ["created_at", "2019-04-05 18:45:19.379467"], ["updated_at", "2019-04-05 18:45:19.379467"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/posts" for ::1 at 2019-04-05 14:46:05 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.7) lib/rack/handler/webrick.rb:86:in `service'
+/Users/caridadrivera/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/caridadrivera/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/caridadrivera/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered collection of /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.7ms)
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.8ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.8ms)
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (163.2ms)
+Started GET "/posts" for ::1 at 2019-04-05 14:46:47 -0400
+Processing by PostsController#show as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 9ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=):
+  
+app/controllers/posts_controller.rb:8:in `show'
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (104.3ms)
+Started GET "/posts" for ::1 at 2019-04-05 14:48:09 -0400
+  
+SyntaxError (/Users/caridadrivera/module2/rails-create-action-readme-nyc-web-career-031119/config/routes.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  get 'posts/id' to: post_path as: create_post
+                   ^):
+  
+config/routes.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.8ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (109.9ms)
+Started GET "/posts" for ::1 at 2019-04-05 14:48:25 -0400
+  
+SyntaxError (/Users/caridadrivera/module2/rails-create-action-readme-nyc-web-career-031119/config/routes.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  get 'posts/id' to: post_path as: post_create
+                   ^):
+  
+config/routes.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.2ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (106.9ms)
+Started GET "/posts" for ::1 at 2019-04-05 14:49:43 -0400
+  
+SyntaxError (/Users/caridadrivera/module2/rails-create-action-readme-nyc-web-career-031119/config/routes.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  get 'posts/id/new' to: posts_path, as: post_create
+                       ^):
+  
+config/routes.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (96.8ms)
+Started GET "/posts" for ::1 at 2019-04-05 14:51:33 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 418ms (Views: 412.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-04-05 14:52:03 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 32ms (Views: 20.7ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/posts" for ::1 at 2019-04-05 14:52:13 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uCP1hszB6snAjf2f74K/xqieyKqA42x9MvgDXbIYoa/fenkEajavaxuoc4SJb8SxmYSvpdkcfsxRkuZQVKE7qA==", "title"=>"Post", "description"=>"Being a post", "commit"=>"Submit Post"}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `post' for #<PostsController:0x007fae07961bc8>):
+  
+app/controllers/posts_controller.rb:15:in `create'
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.6ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (103.4ms)
+Started GET "/posts" for ::1 at 2019-04-05 14:53:12 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 38ms (Views: 31.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/id" for ::1 at 2019-04-05 14:53:19 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=id):
+  
+app/controllers/posts_controller.rb:7:in `show'
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (98.1ms)
+Started GET "/posts/1" for ::1 at 2019-04-05 14:53:23 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 18.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-04-05 14:53:27 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-04-05 14:53:45 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 26ms (Views: 21.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-04-05 14:53:50 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 23ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2019-04-05 14:54:02 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KQub+Nfu5ZnpUaAAxHOnnaLeUxAOlgM+hG/0DPU8+/FOUhd6cRmgOzJ0Lhuintzqk8Q0H1dpEY/nBREBE4Vh9g==", "title"=>"Lost", "description"=>"in this sssshhh", "commit"=>"Submit Post"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `title' for #<PostsController:0x007fae09267848>):
+  
+app/controllers/posts_controller.rb:15:in `create'
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (100.3ms)
+Started GET "/posts" for ::1 at 2019-04-05 14:54:51 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 29ms (Views: 23.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-04-05 14:54:56 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 43ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2019-04-05 14:55:02 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mDcu8S5ARnDv9K3fJvQJiLcDYIzZsi9c//yjntRlXLv/bqJziLcD0jTRI8RAGXL/hhkHg4BNPe2clkaTMtzGvA==", "title"=>"I ", "description"=>"mdee", "commit"=>"Submit Post"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "I "], ["description", "mdee"], ["created_at", "2019-04-05 18:55:02.427445"], ["updated_at", "2019-04-05 18:55:02.427445"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 3.2ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"posts", :id=>nil} missing required keys: [:id]):
+  
+app/controllers/posts_controller.rb:18:in `create'
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (101.2ms)
+Started GET "/posts" for ::1 at 2019-04-05 14:55:28 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-04-05 14:56:01 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 36ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2019-04-05 14:56:16 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KcgXxVcqyHjGKIWg3s9T7sb+9vuSgAiEnHtnvbo/21ROkZtH8d2N2h0NC7u4IiiZ9+SR9Mt/GjX/EYKwXIZBUw==", "title"=>"I am a tile", "description"=>"I am the description of the new post", "commit"=>"Submit Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "I am a tile"], ["description", "I am the description of the new post"], ["created_at", "2019-04-05 18:56:16.394535"], ["updated_at", "2019-04-05 18:56:16.394535"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 3.2ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"posts", :id=>nil} missing required keys: [:id]):
+  
+app/controllers/posts_controller.rb:18:in `create'
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.5ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (104.0ms)
+Started GET "/" for ::1 at 2019-04-05 14:56:23 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/railties-5.0.7.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/railties-5.0.7.2/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 15ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-04-05 14:56:44 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 27ms (Views: 23.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for ::1 at 2019-04-05 14:57:03 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 41ms (Views: 33.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-04-05 14:57:05 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-04-05 14:57:08 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 32ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2019-04-05 14:57:15 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zg/lq61vJjni0fTCpEamL5DB+ECjzqM7D5y0daZkUwwBVmkpC5hjmzn0etnCq91YodufT/oxsYps9lF4QN3JCw==", "title"=>"I am ", "description"=>"IAaaammmf", "commit"=>"Submit Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "I am "], ["description", "IAaaammmf"], ["created_at", "2019-04-05 18:57:15.399219"], ["updated_at", "2019-04-05 18:57:15.399219"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 2.5ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"posts", :id=>nil} missing required keys: [:id]):
+  
+app/controllers/posts_controller.rb:18:in `create'
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/caridadrivera/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.9ms)
+Started GET "/posts" for ::1 at 2019-04-05 14:57:19 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for ::1 at 2019-04-05 15:09:09 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 306ms (Views: 291.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-04-05 15:09:15 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 36ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2019-04-05 15:09:25 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XHkWAiTOqQ6vwvZIFsRbEqWJFsvI7NOLbPIoKnMcXEM7IJqAgjnsrHTneFNwKSBllJNxxJETwToPmM0nlaXGRA==", "title"=>"I am a post", "description"=>"I am a post description", "commit"=>"Submit Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "I am a post"], ["description", "I am a post description"], ["created_at", "2019-04-05 19:09:25.600025"], ["updated_at", "2019-04-05 19:09:25.600025"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/7
+Completed 302 Found in 7ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/posts/7" for ::1 at 2019-04-05 15:09:25 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 19.4ms | ActiveRecord: 0.3ms)
+
+
